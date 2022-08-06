@@ -28,6 +28,7 @@ public class MufredatLink extends GenelWebDriver {
         for (WebElement wE : syllabus)
         {
             Assert.assertNotNull(wE,"Karşılaştırma Sonucu");
+            Assert.assertEquals(syllabus.size(), 5);
             //Assert.assertTrue(wE.getText().toLowerCase().contains("syllabus"));
         }
 
